@@ -9,10 +9,14 @@ port (
     reset       : in std_logic;
     mem_word    : in std_logic_vector(31 downto 0);
 
+    pc_src      : in std_logic;
+    branch      : in std_logic;
     pc_wr       : in std_logic;
-    mem_access  : in std_logic;
+    i_or_d      : in std_logic;
     instr_wr    : in std_logic;
     reg_wr      : in std_logic;
+    mem_to_reg  : in std_logic;
+    reg_dst     : in std_logic;
     src_a_ctrl  : in std_logic;
     src_b_ctrl  : in std_logic_vector( 1 downto 0);
     alu_ctrl    : in std_logic_vector( 2 downto 0);
@@ -38,7 +42,7 @@ architecture behave of multi_cycle_datapath is
         wr_enable   : in std_logic;
     
         data_rd1    : out std_logic_vector(31 downto 0);
-                : out std_logic_vector(31 downto 0)
+        data_rd2    : out std_logic_vector(31 downto 0)
     );
     end component register_file;
     
@@ -60,11 +64,15 @@ architecture behave of multi_cycle_datapath is
     -- internal signals
 
     signal pc           : std_logic_vector(31 downto 0);
-    signal pc_n         : std_logic_vector(31 downto 0);      
+    signal pc_n         : std_logic_vector(31 downto 0);    
+    signal pc_en        : std_logic;  
 
     signal instr        : std_logic_vector(31 downto 0);
     signal mem_data     : std_logic_vector(31 downto 0);
     signal sign_imm     : std_logic_vector(31 downto 0);
+
+    signal reg_wr_addr  : std_logic_vector( 4 downto 0);
+    signal reg_wr_word  : std_logic_vector(31 downto 0);
 
     signal reg_rd1      : std_logic_vector(31 downto 0);
     signal reg_rd2      : std_logic_vector(31 downto 0);
@@ -81,9 +89,18 @@ begin
     ----------------------------------------------------------
     -- update the program counter to access next instruction
     ----------------------------------------------------------
+
+    -- internally calculated control 
+    pc_en <= (branch and zero) or pc_wr;
+
     pc_update : process(clk) begin
+        
+        if (reset = '1') then
+            pc <= (others => '0');
+        end if;
+
         if (rising_edge(clk)) then
-            if (pc_wr = '1') then
+            if (pc_en = '1') then
                 pc <= pc_n;
             end if;
         end if;
@@ -119,9 +136,11 @@ begin
     end process reg_file_reads;
 
     -- wires and simple muxes
-    data_wr  <= reg_rd2_d1;
-    pc_n     <= alu_out;
-    mem_addr <= alu_out_d1 when (mem_access = '1') else pc;
+    data_wr     <= reg_rd2_d1;
+    pc_n        <= alu_out_d1 when (pc_src = '1') else alu_out;
+    mem_addr    <= alu_out_d1 when (i_or_d = '1') else pc;
+    reg_wr_addr <= instr(15 downto 11) when (reg_dst = '1') else instr(20 downto 16);
+    reg_wr_word <= mem_data when (mem_to_reg = '1') else alu_out_d1;
 
 
     u_register_file : register_file
@@ -129,8 +148,8 @@ begin
         clk         => clk                  ,
         addr_rd1    => instr(25 downto 21)  ,
         addr_rd2    => instr(20 downto 16)  ,
-        addr_wr     => instr(20 downto 16)  ,
-        data_wr     => mem_data             ,
+        addr_wr     => reg_wr_addr          ,
+        data_wr     => reg_wr_word          ,
         wr_enable   => reg_wr               ,
 
         data_rd1    => reg_rd1              ,
@@ -154,10 +173,10 @@ begin
 
         -- src_b 4 mux between 4 and sign immediate
         case src_b_ctrl is
-            when "00" => src_b <= (others => '0');
+            when "00" => src_b <= reg_rd2_d1;
             when "01" => src_b <= 32d"4";
             when "10" => src_b <= sign_imm;
-            when "11" => src_b <= (others => '0');
+            when "11" => src_b <= std_logic_vector(shift_left(signed(sign_imm), 2));
         end case;
     end process src_b_mux;
 
