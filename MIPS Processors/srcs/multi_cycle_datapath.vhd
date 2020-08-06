@@ -9,7 +9,6 @@ port (
     reset       : in std_logic;
     mem_word    : in std_logic_vector(31 downto 0);
 
-    pc_src      : in std_logic;
     branch      : in std_logic;
     pc_wr       : in std_logic;
     i_or_d      : in std_logic;
@@ -18,6 +17,7 @@ port (
     mem_to_reg  : in std_logic;
     reg_dst     : in std_logic;
     src_a_ctrl  : in std_logic;
+    pc_src      : in std_logic_vector( 1 downto 0);
     src_b_ctrl  : in std_logic_vector( 1 downto 0);
     alu_ctrl    : in std_logic_vector( 2 downto 0);
 
@@ -65,7 +65,8 @@ architecture behave of multi_cycle_datapath is
 
     signal pc           : std_logic_vector(31 downto 0);
     signal pc_n         : std_logic_vector(31 downto 0);    
-    signal pc_en        : std_logic;  
+    signal jump_addr    : std_logic_vector(31 downto 0);
+    signal pc_en        : std_logic;
 
     signal instr        : std_logic_vector(31 downto 0);
     signal mem_data     : std_logic_vector(31 downto 0);
@@ -93,7 +94,7 @@ begin
     -- internally calculated control 
     pc_en <= (branch and zero) or pc_wr;
 
-    pc_update : process(clk) begin
+    pc_update : process(clk, reset) begin
         
         if (reset = '1') then
             pc <= (others => '0');
@@ -105,6 +106,18 @@ begin
             end if;
         end if;
     end process pc_update;
+
+    ----------------------------------------------------
+    -- computes the next value for the program counter
+    ----------------------------------------------------
+    pc_n_update : process(pc_src) begin
+        case pc_src is
+            when "00" => pc_n <= alu_out;
+            when "01" => pc_n <= alu_out_d1;
+            when "01" => pc_n <= jump_addr;
+            when "01" => pc_n <= (others => '-');
+        end case;
+    end process pc_n_update;
 
 
     ------------------------------------
@@ -137,10 +150,11 @@ begin
 
     -- wires and simple muxes
     data_wr     <= reg_rd2_d1;
-    pc_n        <= alu_out_d1 when (pc_src = '1') else alu_out;
-    mem_addr    <= alu_out_d1 when (i_or_d = '1') else pc;
-    reg_wr_addr <= instr(15 downto 11) when (reg_dst = '1') else instr(20 downto 16);
-    reg_wr_word <= mem_data when (mem_to_reg = '1') else alu_out_d1;
+    jump_addr   <= (pc(31 downto 28), instr(25 downto 0), "00");
+
+    mem_addr    <= alu_out_d1          when (i_or_d = '1')     else pc;
+    reg_wr_addr <= instr(15 downto 11) when (reg_dst = '1')    else instr(20 downto 16);
+    reg_wr_word <= mem_data            when (mem_to_reg = '1') else alu_out_d1;
 
 
     u_register_file : register_file
