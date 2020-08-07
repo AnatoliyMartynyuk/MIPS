@@ -9,10 +9,10 @@ z2
 cModel Technology
 Z0 dC:/Users/Anatoliy/Desktop/MIPS Processors/modelsim
 T_opt
-!s110 1596767872
-VU_eR8WcK_6:3^:i[hf?IY1
+!s110 1596768238
+VRaB=9O8[A@i3SiADKL]`G0
 04 22 6 work tb_multi_cycle_control behave 1
-=1-d0577b17709b-5f2cbe80-1a-5554
+=1-d0577b17709b-5f2cbfee-2dc-3888
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
@@ -200,7 +200,7 @@ R32
 R16
 R17
 Emulti_cycle_control
-Z36 w1596767861
+Z36 w1596768232
 R7
 R8
 Z37 dC:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim
@@ -212,9 +212,9 @@ V?DmZ3lZ>A[@nm4BngoPm82
 !s100 `CGXG[z>e[aQOTj7[X5=N3
 R11
 33
-Z40 !s110 1596767870
+Z40 !s110 1596768237
 !i10b 1
-Z41 !s108 1596767870.000000
+Z41 !s108 1596768237.000000
 Z42 !s90 -reportprogress|300|-work|work|../srcs/multi_cycle_control.vhd|
 Z43 !s107 ../srcs/multi_cycle_control.vhd|
 !i113 0
@@ -226,8 +226,8 @@ R8
 DEx4 work 19 multi_cycle_control 0 22 ?DmZ3lZ>A[@nm4BngoPm82
 l37
 L26
-V3YXfEg[Za?GzQmcbjlB0m0
-!s100 :?zUSz];MTcCZP;AFQ7^l0
+VYAPB;iU>`ZUn75LU4ccAW3
+!s100 ?IcmmTb?HnPXIfVc;O:_10
 R11
 33
 R40

@@ -28,10 +28,10 @@ architecture behave of multi_cycle_control is
     signal ALU_op : std_logic_vector(1 downto 0);
 
     -- FSM states and signals
-    type FSM_state is (fetch_s, decode_s, mem_addr_s, mem_read_s, mem_writeback_s,
-                       mem_write_s, compute_s, alu_writeback_s, branch_s, addi_compute_s,
-                       addi_writeback_s, jump_s);
-    signal ps   : FSM_state := decode_s;
+    type FSM_state is (S_FETCH, S_DECODE, S_MEM_ADDR, S_MEM_READ, S_MEM_WRITEBACK,
+                       S_MEM_WRITE, S_COMPUTE, S_ALU_WRITEBACK, S_BRANCH, S_ADDI_COMPUTE,
+                       S_ADDI_WRITEBACK, S_JUMP);
+    signal ps   : FSM_state;
     signal ns   : FSM_state;
 
 begin
@@ -41,8 +41,8 @@ begin
     -- ns each clock cycle
     --------------------------------------------------------------
     pr_state_transition : process (clk, reset) begin
-        if (reset <= '1') then
-            ps <= fetch_s;
+        if (reset = '1') then
+            ps <= S_FETCH;
         elsif (rising_edge(clk)) then
             ps <= ns;
         end if;
@@ -53,47 +53,47 @@ begin
     --------------------------------------------------------------
     pr_state_traversal : process (ps) begin
         case ps is
-            when fetch_s          => ns <= decode_s;
+            when S_FETCH          => ns <= S_DECODE;
             
-            when decode_s         => 
+            when S_DECODE         => 
 
                 if (opcode = "100011" or opcode = "101011") then    -- if lw or sw
-                    ns <= mem_addr_s;
+                    ns <= S_MEM_ADDR;
                 elsif (opcode = "000000") then                      -- if r-type
-                    ns <= compute_s;
+                    ns <= S_COMPUTE;
                 elsif (opcode = "000100") then                      -- if branch
-                    ns <= branch_s; 
+                    ns <= S_BRANCH; 
                 elsif (opcode = "000010") then                      -- if addi
-                    ns <= addi_compute_s;
+                    ns <= S_ADDI_COMPUTE;
                 else                                                -- if jump
-                    ns <= jump_s;
+                    ns <= S_JUMP;
                 end if;
 
-            when mem_addr_s       =>
+            when S_MEM_ADDR       =>
 
                 if (opcode = "100011" ) then                        -- if lw
-                    ns <= mem_read_s;
+                    ns <= S_MEM_READ;
                 else                                                -- if sw
-                    ns <= mem_write_s;
+                    ns <= S_MEM_WRITE;
                 end if;
 
-            when mem_read_s       => ns <= mem_writeback_s;
+            when S_MEM_READ       => ns <= S_MEM_WRITEBACK;
 
-            when mem_writeback_s  => ns <= fetch_s;
+            when S_MEM_WRITEBACK  => ns <= S_FETCH;
 
-            when mem_write_s      => ns <= fetch_s;
+            when S_MEM_WRITE      => ns <= S_FETCH;
 
-            when compute_s        => ns <= alu_writeback_S;
+            when S_COMPUTE        => ns <= S_ALU_WRITEBACK;
 
-            when alu_writeback_s  => ns <= fetch_s;
+            when S_ALU_WRITEBACK  => ns <= S_FETCH;
 
-            when branch_s         => ns <= fetch_s;
+            when S_BRANCH         => ns <= S_FETCH;
 
-            when addi_compute_s   => ns <= addi_writeback_s;
+            when S_ADDI_COMPUTE   => ns <= S_ADDI_WRITEBACK;
 
-            when addi_writeback_s => ns <= fetch_s;
+            when S_ADDI_WRITEBACK => ns <= S_FETCH;
 
-            when jump_s           => ns <= fetch_s;
+            when S_JUMP           => ns <= S_FETCH;
 
         end case;
     end process pr_state_traversal;
@@ -106,7 +106,7 @@ begin
         case ps is
 
             -- instruction fetch
-            when fetch_s =>
+            when S_FETCH =>
                 alu_op      <= "00";
 
                 i_or_d      <= '0';
@@ -122,7 +122,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '0';
 
-            when decode_s =>
+            when S_DECODE =>
                 alu_op      <= "00";
 
                 i_or_d      <= '-';
@@ -138,7 +138,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '0';
 
-            when mem_addr_s =>
+            when S_MEM_ADDR =>
                 alu_op      <= "00";
 
                 i_or_d      <= '-';
@@ -154,7 +154,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '0';
 
-            when mem_read_s =>
+            when S_MEM_READ =>
                 alu_op      <= "--";
 
                 i_or_d      <= '1';
@@ -170,7 +170,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '0';
 
-            when mem_writeback_s =>
+            when S_MEM_WRITEBACK =>
                 alu_op      <= "--";
 
                 i_or_d      <= '-';
@@ -186,7 +186,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '0';
 
-            when mem_write_s =>
+            when S_MEM_WRITE =>
                 alu_op      <= "--";
 
                 i_or_d      <= '1';
@@ -202,7 +202,7 @@ begin
                 mem_write   <= '1';
                 branch      <= '0';
 
-            when compute_s =>
+            when S_COMPUTE =>
                 alu_op      <= "10";
 
                 i_or_d      <= '-';
@@ -218,7 +218,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '0';
 
-            when alu_writeback_s =>
+            when S_ALU_WRITEBACK =>
                 alu_op      <= "--";
 
                 i_or_d      <= '-';
@@ -234,7 +234,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '0';
 
-            when branch_s =>
+            when S_BRANCH =>
                 alu_op      <= "01";
 
                 i_or_d      <= '-';
@@ -250,7 +250,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '1';
 
-            when addi_compute_s =>
+            when S_ADDI_COMPUTE =>
                 alu_op      <= "00";
 
                 i_or_d      <= '-';
@@ -266,7 +266,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '0';
 
-            when addi_writeback_s =>
+            when S_ADDI_WRITEBACK =>
                 alu_op      <= "--";
 
                 i_or_d      <= '-';
@@ -282,7 +282,7 @@ begin
                 mem_write   <= '0';
                 branch      <= '0';
 
-            when jump_s           =>
+            when S_JUMP           =>
                 alu_op      <= "--";
 
                 i_or_d      <= '-';
