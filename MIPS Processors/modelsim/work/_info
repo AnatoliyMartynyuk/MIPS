@@ -9,15 +9,14 @@ z2
 cModel Technology
 Z0 dC:/Users/Anatoliy/Desktop/MIPS Processors/modelsim
 T_opt
-!s110 1596414751
-V2444Y2@B]^1KnYXEL8H7<3
-04 14 6 work tb_mips_memory behave 1
-=1-d0577b17709b-5f275b1f-1be-2a34
+!s110 1596767872
+VU_eR8WcK_6:3^:i[hf?IY1
+04 22 6 work tb_multi_cycle_control behave 1
+=1-d0577b17709b-5f2cbe80-1a-5554
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;10.5c;63
-R0
 T_opt1
 !s110 1596414778
 VzeA1RZka<3OkbC@f[S=Qa3
@@ -37,6 +36,7 @@ R1
 R2
 n@_opt2
 R3
+R0
 Ealu
 Z4 w1596325296
 Z5 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
@@ -199,14 +199,53 @@ R32
 !i113 0
 R16
 R17
+Emulti_cycle_control
+Z36 w1596767861
+R7
+R8
+Z37 dC:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim
+Z38 8../srcs/multi_cycle_control.vhd
+Z39 F../srcs/multi_cycle_control.vhd
+l0
+L4
+V?DmZ3lZ>A[@nm4BngoPm82
+!s100 `CGXG[z>e[aQOTj7[X5=N3
+R11
+33
+Z40 !s110 1596767870
+!i10b 1
+Z41 !s108 1596767870.000000
+Z42 !s90 -reportprogress|300|-work|work|../srcs/multi_cycle_control.vhd|
+Z43 !s107 ../srcs/multi_cycle_control.vhd|
+!i113 0
+R16
+R17
+Abehave
+R7
+R8
+DEx4 work 19 multi_cycle_control 0 22 ?DmZ3lZ>A[@nm4BngoPm82
+l37
+L26
+V3YXfEg[Za?GzQmcbjlB0m0
+!s100 :?zUSz];MTcCZP;AFQ7^l0
+R11
+33
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 0
+R16
+R17
 Eregister_file
-Z36 w1596165201
+Z44 w1596165201
 R19
 R7
 R8
 R0
-Z37 8../srcs/register_file.vhd
-Z38 F../srcs/register_file.vhd
+Z45 8../srcs/register_file.vhd
+Z46 F../srcs/register_file.vhd
 l0
 L6
 VFYzVZXJfA5cE@OPg_^b5B1
@@ -216,8 +255,8 @@ R11
 R12
 !i10b 1
 R13
-Z39 !s90 -reportprogress|300|-work|work|../srcs/register_file.vhd|
-Z40 !s107 ../srcs/register_file.vhd|
+Z47 !s90 -reportprogress|300|-work|work|../srcs/register_file.vhd|
+Z48 !s107 ../srcs/register_file.vhd|
 !i113 0
 R16
 R17
@@ -235,18 +274,18 @@ R11
 R12
 !i10b 1
 R13
-R39
-R40
+R47
+R48
 !i113 0
 R16
 R17
 Esingle_cycle_comp
-Z41 w1596417280
+Z49 w1596417280
 R7
 R8
 R0
-Z42 8../srcs/single_cycle_comp.vhd
-Z43 F../srcs/single_cycle_comp.vhd
+Z50 8../srcs/single_cycle_comp.vhd
+Z51 F../srcs/single_cycle_comp.vhd
 l0
 L4
 VR`h>h?C<AzmD3Cl^DXWMM0
@@ -256,8 +295,8 @@ R11
 R29
 !i10b 1
 R30
-Z44 !s90 -reportprogress|300|-work|work|../srcs/single_cycle_comp.vhd|
-Z45 !s107 ../srcs/single_cycle_comp.vhd|
+Z52 !s90 -reportprogress|300|-work|work|../srcs/single_cycle_comp.vhd|
+Z53 !s107 ../srcs/single_cycle_comp.vhd|
 !i113 0
 R16
 R17
@@ -274,18 +313,18 @@ R11
 R29
 !i10b 1
 R30
-R44
-R45
+R52
+R53
 !i113 0
 R16
 R17
 Esingle_cycle_control
-Z46 w1596492219
+Z54 w1596492219
 R7
 R8
 R0
-Z47 8../srcs/single_cycle_control.vhd
-Z48 F../srcs/single_cycle_control.vhd
+Z55 8../srcs/single_cycle_control.vhd
+Z56 F../srcs/single_cycle_control.vhd
 l0
 L5
 VQdo<lS2H6>KKd>OZOlP[U1
@@ -295,8 +334,8 @@ R11
 R12
 !i10b 1
 R13
-Z49 !s90 -reportprogress|300|-work|work|../srcs/single_cycle_control.vhd|
-Z50 !s107 ../srcs/single_cycle_control.vhd|
+Z57 !s90 -reportprogress|300|-work|work|../srcs/single_cycle_control.vhd|
+Z58 !s107 ../srcs/single_cycle_control.vhd|
 !i113 0
 R16
 R17
@@ -313,21 +352,21 @@ R11
 R12
 !i10b 1
 R13
-R49
-R50
+R57
+R58
 !i113 0
 R16
 R17
 Esingle_cycle_datapath
-Z51 w1596412685
+Z59 w1596412685
 R19
 R5
 R6
 R7
 R8
 R0
-Z52 8../srcs/single_cycle_datapath.vhd
-Z53 F../srcs/single_cycle_datapath.vhd
+Z60 8../srcs/single_cycle_datapath.vhd
+Z61 F../srcs/single_cycle_datapath.vhd
 l0
 L6
 Vzi1`dHD9liCiHViMcUWmQ0
@@ -337,8 +376,8 @@ R11
 R29
 !i10b 1
 R30
-Z54 !s90 -reportprogress|300|-work|work|../srcs/single_cycle_datapath.vhd|
-Z55 !s107 ../srcs/single_cycle_datapath.vhd|
+Z62 !s90 -reportprogress|300|-work|work|../srcs/single_cycle_datapath.vhd|
+Z63 !s107 ../srcs/single_cycle_datapath.vhd|
 !i113 0
 R16
 R17
@@ -358,29 +397,29 @@ R11
 R29
 !i10b 1
 R30
-R54
-R55
+R62
+R63
 !i113 0
 R16
 R17
 Etb_alu
-Z56 w1596325556
+Z64 w1596325556
 R7
 R8
 R0
-Z57 8../sims/tb_ALU.vhd
-Z58 F../sims/tb_ALU.vhd
+Z65 8../sims/tb_ALU.vhd
+Z66 F../sims/tb_ALU.vhd
 l0
 L24
 VZh:=1:ooLP;8mOXo=`]XF3
 !s100 1K>[Ri3dh1eFIEmFQm4lI2
 R11
 33
-Z59 !s110 1596326262
+Z67 !s110 1596326262
 !i10b 1
-Z60 !s108 1596326262.000000
-Z61 !s90 -reportprogress|300|-work|work|../sims/tb_ALU.vhd|
-Z62 !s107 ../sims/tb_ALU.vhd|
+Z68 !s108 1596326262.000000
+Z69 !s90 -reportprogress|300|-work|work|../sims/tb_ALU.vhd|
+Z70 !s107 ../sims/tb_ALU.vhd|
 !i113 0
 R16
 R17
@@ -394,21 +433,21 @@ V3?h67DB0]AldOEzbCUzdc1
 !s100 H>8WD9EMNnl`W>>Kd9gYf0
 R11
 33
-R59
+R67
 !i10b 1
-R60
-R61
-R62
+R68
+R69
+R70
 !i113 0
 R16
 R17
 Etb_mips_memory
-Z63 w1596234419
+Z71 w1596234419
 R7
 R8
 R0
-Z64 8../sims/tb_MIPS_memory.vhd
-Z65 F../sims/tb_MIPS_memory.vhd
+Z72 8../sims/tb_MIPS_memory.vhd
+Z73 F../sims/tb_MIPS_memory.vhd
 l0
 L4
 VhbmaOHQ7hNVF;M>OZHojQ1
@@ -417,9 +456,9 @@ R11
 33
 R22
 !i10b 1
-Z66 !s108 1596414750.000000
-Z67 !s90 -reportprogress|300|-work|work|../sims/tb_MIPS_memory.vhd|
-Z68 !s107 ../sims/tb_MIPS_memory.vhd|
+Z74 !s108 1596414750.000000
+Z75 !s90 -reportprogress|300|-work|work|../sims/tb_MIPS_memory.vhd|
+Z76 !s107 ../sims/tb_MIPS_memory.vhd|
 !i113 0
 R16
 R17
@@ -435,30 +474,30 @@ R11
 33
 R22
 !i10b 1
-R66
-R67
-R68
+R74
+R75
+R76
 !i113 0
 R16
 R17
 Etb_mips_single_cycle
-Z69 w1596414768
+Z77 w1596414768
 R7
 R8
 R0
-Z70 8../sims/tb_MIPS_single_cycle.vhd
-Z71 F../sims/tb_MIPS_single_cycle.vhd
+Z78 8../sims/tb_MIPS_single_cycle.vhd
+Z79 F../sims/tb_MIPS_single_cycle.vhd
 l0
 L4
 VGc11GzkUzej44H4C10HkG2
 !s100 BX:^73m>DKRFn1R>OLCVJ1
 R11
 33
-Z72 !s110 1596414776
+Z80 !s110 1596414776
 !i10b 1
-Z73 !s108 1596414776.000000
-Z74 !s90 -reportprogress|300|-work|work|../sims/tb_MIPS_single_cycle.vhd|
-Z75 !s107 ../sims/tb_MIPS_single_cycle.vhd|
+Z81 !s108 1596414776.000000
+Z82 !s90 -reportprogress|300|-work|work|../sims/tb_MIPS_single_cycle.vhd|
+Z83 !s107 ../sims/tb_MIPS_single_cycle.vhd|
 !i113 0
 R16
 R17
@@ -472,21 +511,60 @@ Vl3b9c`5_dmloke<I2848E3
 !s100 hKH0BKG9ViU6NWWnNQ:R>1
 R11
 33
-R72
+R80
 !i10b 1
-R73
-R74
-R75
+R81
+R82
+R83
+!i113 0
+R16
+R17
+Etb_multi_cycle_control
+Z84 w1596766689
+R7
+R8
+R37
+Z85 8../sims/tb_multi_cycle_control.vhd
+Z86 F../sims/tb_multi_cycle_control.vhd
+l0
+L4
+V1cN8A;9iH<e2DAQ:UZ4h@2
+!s100 4df7hB;GM[hXX?g4TlPFC3
+R11
+33
+R40
+!i10b 1
+R41
+Z87 !s90 -reportprogress|300|-work|work|../sims/tb_multi_cycle_control.vhd|
+Z88 !s107 ../sims/tb_multi_cycle_control.vhd|
+!i113 0
+R16
+R17
+Abehave
+R7
+R8
+DEx4 work 22 tb_multi_cycle_control 0 22 1cN8A;9iH<e2DAQ:UZ4h@2
+l55
+L7
+VXBz<OLT]5m2zmY4lEO6G61
+!s100 4?f:gOLVQbI86KdCJ7W0G1
+R11
+33
+R40
+!i10b 1
+R41
+R87
+R88
 !i113 0
 R16
 R17
 Etb_single_cycle_comp
-Z76 w1596492431
+Z89 w1596492431
 R7
 R8
 R0
-Z77 8../sims/tb_single_cycle_comp.vhd
-Z78 F../sims/tb_single_cycle_comp.vhd
+Z90 8../sims/tb_single_cycle_comp.vhd
+Z91 F../sims/tb_single_cycle_comp.vhd
 l0
 L4
 VCO^Hii2>XdkYB@>GMo=o22
@@ -496,8 +574,8 @@ R11
 R12
 !i10b 1
 R13
-Z79 !s90 -reportprogress|300|-work|work|../sims/tb_single_cycle_comp.vhd|
-Z80 !s107 ../sims/tb_single_cycle_comp.vhd|
+Z92 !s90 -reportprogress|300|-work|work|../sims/tb_single_cycle_comp.vhd|
+Z93 !s107 ../sims/tb_single_cycle_comp.vhd|
 !i113 0
 R16
 R17
@@ -514,29 +592,29 @@ R11
 R12
 !i10b 1
 R13
-R79
-R80
+R92
+R93
 !i113 0
 R16
 R17
 Etb_single_cycle_datapath
-Z81 w1596329714
+Z94 w1596329714
 R7
 R8
 R0
-Z82 8../sims/tb_single_cycle_datapath.vhd
-Z83 F../sims/tb_single_cycle_datapath.vhd
+Z95 8../sims/tb_single_cycle_datapath.vhd
+Z96 F../sims/tb_single_cycle_datapath.vhd
 l0
 L4
 V9oEzONYoUIzfZcdA6_K4b0
 !s100 CniD@Ulm4a@:CfgnbbhA;3
 R11
 33
-Z84 !s110 1596329726
+Z97 !s110 1596329726
 !i10b 1
-Z85 !s108 1596329726.000000
-Z86 !s90 -reportprogress|300|-work|work|../sims/tb_single_cycle_datapath.vhd|
-Z87 !s107 ../sims/tb_single_cycle_datapath.vhd|
+Z98 !s108 1596329726.000000
+Z99 !s90 -reportprogress|300|-work|work|../sims/tb_single_cycle_datapath.vhd|
+Z100 !s107 ../sims/tb_single_cycle_datapath.vhd|
 !i113 0
 R16
 R17
@@ -550,11 +628,11 @@ V6d6Nl?aDf_m6gLJjHhk:93
 !s100 SMnFm0:NhAFZHB5n_C8J52
 R11
 33
-R84
+R97
 !i10b 1
-R85
-R86
-R87
+R98
+R99
+R100
 !i113 0
 R16
 R17

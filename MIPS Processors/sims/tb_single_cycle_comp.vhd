@@ -42,7 +42,7 @@ begin
         end if;
     end process;
 
-        -- simulation process
+    -- simulation process
     stim_proc: process
     begin
 

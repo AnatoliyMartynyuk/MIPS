@@ -12,3 +12,761 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 18:56:47 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "../srcs/multi_cycle_control.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 18:56:47 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+pwd
+# C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 18:57:36 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "../srcs/multi_cycle_control.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 18:57:36 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+cd ..
+# reading C:/modeltech64_10.5c/win64/../modelsim.ini
+pwd
+# C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors
+dir
+#  Volume in drive C has no label.
+#  Volume Serial Number is 8846-1F04
+# 
+#  Directory of C:\Users\Anatoliy\Documents\GitHub\MIPS\MIPS Processors
+# 
+# 08/04/2020  05:15 PM    <DIR>          .
+# 08/04/2020  05:15 PM    <DIR>          ..
+# 08/06/2020  06:55 PM    <DIR>          modelsim
+# 08/06/2020  06:41 PM    <DIR>          sims
+# 08/05/2020  06:13 PM    <DIR>          srcs
+#                0 File(s)              0 bytes
+#                5 Dir(s)  173,624,119,296 bytes free
+cd src
+# couldn't change working directory to "src": no such file or directory
+cd srcs
+dir
+#  Volume in drive C has no label.
+#  Volume Serial Number is 8846-1F04
+# 
+#  Directory of C:\Users\Anatoliy\Documents\GitHub\MIPS\MIPS Processors\srcs
+# 
+# 08/05/2020  06:13 PM    <DIR>          .
+# 08/05/2020  06:13 PM    <DIR>          ..
+# 08/01/2020  04:41 PM             1,423 ALU.vhd
+# 08/02/2020  06:05 PM             1,278 instruction_mif.txt
+# 07/31/2020  03:12 PM             3,159 MIPS_memory.vhd
+# 08/02/2020  05:18 PM             3,972 MIPS_single_cycle.vhd
+# 08/06/2020  04:32 PM             6,784 multi_cycle_datapath.vhd
+# 08/06/2020  06:58 PM            10,695 mutli_cycle_control.vhd
+# 07/30/2020  08:13 PM             1,758 register_file.vhd
+# 08/02/2020  06:14 PM             2,413 single_cycle_comp.vhd
+# 08/03/2020  03:03 PM             4,310 single_cycle_control.vhd
+# 08/04/2020  05:16 PM             4,976 single_cycle_datapath.vhd
+#               10 File(s)         40,768 bytes
+#                2 Dir(s)  173,624,119,296 bytes free
+cd ../modelsim
+# reading modelsim.ini
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 18:59:22 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "../srcs/multi_cycle_control.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 18:59:22 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:00:07 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(21): (vcom-1294) Declaration with designator "pc_src" already exists in this region.
+# ** =====> Prior declaration of "pc_src" is at ../srcs/multi_cycle_control.vhd(11).
+# ** Error: ../srcs/multi_cycle_control.vhd(25): VHDL Compiler exiting
+# End time: 19:00:07 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:00:34 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(32): (vcom-1294) Declaration with designator "mem_write" already exists in this region.
+# ** =====> Prior declaration of "mem_write" is at ../srcs/multi_cycle_control.vhd(18).
+# ** Error: ../srcs/multi_cycle_control.vhd(32): (vcom-1294) Declaration with designator "branch" already exists in this region.
+# ** =====> Prior declaration of "branch" is at ../srcs/multi_cycle_control.vhd(11).
+# ** Error: ../srcs/multi_cycle_control.vhd(33): near "addi_writeback": (vcom-1576) expecting ',' or ')'.
+# ** Error: ../srcs/multi_cycle_control.vhd(34): (vcom-1136) Unknown identifier "FSM_state".
+# ** Error: ../srcs/multi_cycle_control.vhd(35): (vcom-1136) Unknown identifier "FSM_state".
+# ** Error: ../srcs/multi_cycle_control.vhd(45): VHDL Compiler exiting
+# End time: 19:00:35 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:02:04 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(32): (vcom-1294) Declaration with designator "branch" already exists in this region.
+# ** =====> Prior declaration of "branch" is at ../srcs/multi_cycle_control.vhd(11).
+# ** Error: ../srcs/multi_cycle_control.vhd(33): near "addi_writeback": (vcom-1576) expecting ',' or ')'.
+# ** Error: ../srcs/multi_cycle_control.vhd(34): (vcom-1136) Unknown identifier "FSM_state".
+# ** Error: ../srcs/multi_cycle_control.vhd(35): (vcom-1136) Unknown identifier "FSM_state".
+# ** Error: ../srcs/multi_cycle_control.vhd(45): VHDL Compiler exiting
+# End time: 19:02:04 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:05:55 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(33): near "addi_writeback_s": (vcom-1576) expecting ',' or ')'.
+# ** Error: ../srcs/multi_cycle_control.vhd(34): (vcom-1136) Unknown identifier "FSM_state".
+# ** Error: ../srcs/multi_cycle_control.vhd(35): (vcom-1136) Unknown identifier "FSM_state".
+# ** Error: ../srcs/multi_cycle_control.vhd(45): (vcom-1136) Unknown identifier "fetch".
+# ** Error: ../srcs/multi_cycle_control.vhd(55): (vcom-1489) Case expression must be of a discrete type.
+# ** Error: ../srcs/multi_cycle_control.vhd(56): VHDL Compiler exiting
+# End time: 19:05:55 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:06:07 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(45): (vcom-1136) Unknown identifier "fetch".
+# ** Error: ../srcs/multi_cycle_control.vhd(61): near "ns": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 19:06:07 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:06:19 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(61): near "ns": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 19:06:19 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:06:46 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(61): near "ns": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 19:06:46 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:07:11 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(61): near "ns": (vcom-1576) expecting GENERATE or THEN or USE.
+# End time: 19:07:12 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:07:48 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(63): near "ns": (vcom-1576) expecting THEN.
+# End time: 19:07:48 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:08:25 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(76): near "else": (vcom-1576) expecting ';'.
+# ** Error: ../srcs/multi_cycle_control.vhd(82): (vcom-1581) No feasible entries for prefix operator '??'.
+# ** Error: ../srcs/multi_cycle_control.vhd(82): Type error resolving prefix expression "??" as type std.STANDARD.BOOLEAN.
+# ** Error: ../srcs/multi_cycle_control.vhd(82): near "=>": (vcom-1576) expecting ';'.
+# ** Error: ../srcs/multi_cycle_control.vhd(113): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(113): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(114): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(114): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(129): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(129): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(130): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(130): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(145): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(145): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(146): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(146): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(161): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(161): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(162): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(162): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(177): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(177): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(178): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(178): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(193): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(193): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(194): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(194): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(209): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(209): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(210): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(210): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(225): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(225): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(226): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(226): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(241): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(241): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(242): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(242): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(257): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(257): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(258): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(258): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(273): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(273): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(274): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(274): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(289): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(289): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(290): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(290): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(55): (vcom-1339) Case statement choices cover only 11 out of 12 cases.
+# ** Error: ../srcs/multi_cycle_control.vhd(327): VHDL Compiler exiting
+# End time: 19:08:26 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 54, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:08:46 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(82): (vcom-1581) No feasible entries for prefix operator '??'.
+# ** Error: ../srcs/multi_cycle_control.vhd(82): Type error resolving prefix expression "??" as type std.STANDARD.BOOLEAN.
+# ** Error: ../srcs/multi_cycle_control.vhd(82): near "=>": (vcom-1576) expecting ';'.
+# ** Error: ../srcs/multi_cycle_control.vhd(113): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(113): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(114): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(114): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(129): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(129): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(130): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(130): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(145): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(145): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(146): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(146): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(161): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(161): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(162): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(162): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(177): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(177): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(178): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(178): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(193): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(193): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(194): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(194): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(209): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(209): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(210): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(210): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(225): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(225): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(226): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(226): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(241): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(241): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(242): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(242): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(257): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(257): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(258): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(258): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(273): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(273): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(274): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(274): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(289): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(289): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(290): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(290): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(55): (vcom-1339) Case statement choices cover only 11 out of 12 cases.
+# ** Error: ../srcs/multi_cycle_control.vhd(327): VHDL Compiler exiting
+# End time: 19:08:46 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 53, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:09:08 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# ** Error: ../srcs/multi_cycle_control.vhd(113): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(113): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(114): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(114): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(129): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(129): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(130): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(130): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(145): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(145): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(146): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(146): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(161): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(161): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(162): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(162): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(177): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(177): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(178): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(178): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(193): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(193): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(194): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(194): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(209): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(209): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(210): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(210): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(225): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(225): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(226): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(226): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(241): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(241): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(242): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(242): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(257): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(257): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(258): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(258): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(273): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(273): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(274): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(274): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(289): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(289): (vcom-1136) Unknown identifier "alu_src_a".
+# ** Error: ../srcs/multi_cycle_control.vhd(290): Illegal target for signal assignment.
+# ** Error: ../srcs/multi_cycle_control.vhd(290): (vcom-1136) Unknown identifier "alu_src_b".
+# ** Error: ../srcs/multi_cycle_control.vhd(327): VHDL Compiler exiting
+# End time: 19:09:08 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 49, Warnings: 0
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 5
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../srcs/multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:10:41 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 19:10:41 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:10:41 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_multi_cycle_control
+# -- Compiling architecture behave of tb_multi_cycle_control
+# ** Error: ../sims/tb_multi_cycle_control.vhd(26): (vcom-1294) Declaration with designator "pc_src" already exists in this region.
+# ** =====> Prior declaration of "pc_src" is at ../sims/tb_multi_cycle_control.vhd(16).
+# ** Error: ../sims/tb_multi_cycle_control.vhd(49): (vcom-1294) Declaration with designator "pc_src" already exists in this region.
+# ** =====> Prior declaration of "pc_src" is at ../sims/tb_multi_cycle_control.vhd(39).
+# ** Error: ../sims/tb_multi_cycle_control.vhd(54): near "constant": (vcom-1576) expecting ';'.
+# ** Warning: ../sims/tb_multi_cycle_control.vhd(54): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: ../sims/tb_multi_cycle_control.vhd(77): (vcom-1025) Formal "pc_src" has already been associated (in whole) at line 67.
+# ** Error: ../sims/tb_multi_cycle_control.vhd(79): (vcom-1136) Unknown identifier "alu_ctrl".
+# ** Error: ../sims/tb_multi_cycle_control.vhd(67): Signal "pc_src" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: ../sims/tb_multi_cycle_control.vhd(87): (vcom-1136) Unknown identifier "clk_period".
+# ** Error: ../sims/tb_multi_cycle_control.vhd(87): Type error resolving infix expression "/" as type std.STANDARD.TIME.
+# ** Error: ../sims/tb_multi_cycle_control.vhd(89): (vcom-1136) Unknown identifier "clk_period".
+# ** Error: ../sims/tb_multi_cycle_control.vhd(89): Type error resolving infix expression "/" as type std.STANDARD.TIME.
+# ** Error: ../sims/tb_multi_cycle_control.vhd(109): (vcom-1136) Unknown identifier "period".
+# ** Error: ../sims/tb_multi_cycle_control.vhd(141): VHDL Compiler exiting
+# End time: 19:10:41 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 12, Warnings: 1
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 6
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../sims/tb_multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:11:18 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 19:11:18 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:11:18 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_multi_cycle_control
+# -- Compiling architecture behave of tb_multi_cycle_control
+# ** Warning: ../sims/tb_multi_cycle_control.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: ../sims/tb_multi_cycle_control.vhd(75): (vcom-1025) Formal "pc_src" has already been associated (in whole) at line 65.
+# ** Error: ../sims/tb_multi_cycle_control.vhd(107): (vcom-1136) Unknown identifier "period".
+# ** Error: ../sims/tb_multi_cycle_control.vhd(139): VHDL Compiler exiting
+# End time: 19:11:18 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 1
+# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
+# Error in macro ./run_multi_cycle_control.do line 6
+# C:/modeltech64_10.5c/win64/vcom failed.
+#     while executing
+# "vcom -work work "../sims/tb_multi_cycle_control.vhd""
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:11:54 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 19:11:54 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:11:54 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_multi_cycle_control
+# -- Compiling architecture behave of tb_multi_cycle_control
+# ** Warning: ../sims/tb_multi_cycle_control.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 19:11:54 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_control 
+# Start time: 19:11:54 on Aug 06,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "multi_cycle_control(behave)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_multi_cycle_control(behave)#1
+# Loading work.multi_cycle_control(behave)#1
+# ** Error: Cannot open macro file: wave_multi_cycle_control.do
+# Error in macro ./run_multi_cycle_control.do line 12
+# Cannot open macro file: wave_multi_cycle_control.do
+#     while executing
+# "do wave_multi_cycle_control.do"
+add wave -position end  sim:/tb_multi_cycle_control/clk
+add wave -position end  sim:/tb_multi_cycle_control/reset
+add wave -position end  sim:/tb_multi_cycle_control/opcode
+add wave -position end  sim:/tb_multi_cycle_control/funct
+add wave -position end  sim:/tb_multi_cycle_control/branch
+add wave -position end  sim:/tb_multi_cycle_control/pc_wr
+add wave -position end  sim:/tb_multi_cycle_control/i_or_d
+add wave -position end  sim:/tb_multi_cycle_control/instr_wr
+add wave -position end  sim:/tb_multi_cycle_control/reg_wr
+add wave -position end  sim:/tb_multi_cycle_control/mem_to_reg
+add wave -position end  sim:/tb_multi_cycle_control/reg_dst
+add wave -position end  sim:/tb_multi_cycle_control/mem_write
+add wave -position end  sim:/tb_multi_cycle_control/src_a_ctrl
+add wave -position end  sim:/tb_multi_cycle_control/pc_src
+add wave -position end  sim:/tb_multi_cycle_control/src_b_ctrl
+add wave -position end  sim:/tb_multi_cycle_control/alu_ctrl
+add wave -position end  sim:/tb_multi_cycle_control/sim_done
+add wave -position end  sim:/tb_multi_cycle_control/clk_period
+add wave -position 0  sim:/tb_multi_cycle_control/u_multi_cycle_control/ps
+add wave -position 1  sim:/tb_multi_cycle_control/u_multi_cycle_control/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_control.do}
+dor run_multi_cycle_control.do
+# invalid command name "dor"
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:13:43 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 19:13:44 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:13:44 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_multi_cycle_control
+# -- Compiling architecture behave of tb_multi_cycle_control
+# ** Warning: ../sims/tb_multi_cycle_control.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 19:13:44 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 19:13:45 on Aug 06,2020, Elapsed time: 0:01:51
+# Errors: 4, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_control 
+# Start time: 19:13:45 on Aug 06,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_multi_cycle_control(behave)#1
+# Loading work.multi_cycle_control(behave)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+find drivers -source -time {19347 ps} -cause sim:/tb_multi_cycle_control/clk
+find drivers -source -time {23371 ps} -cause sim:/tb_multi_cycle_control/clk
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_control.do}
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:21:33 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 19:21:33 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:21:33 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_multi_cycle_control
+# -- Compiling architecture behave of tb_multi_cycle_control
+# ** Warning: ../sims/tb_multi_cycle_control.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 19:21:34 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# End time: 19:21:35 on Aug 06,2020, Elapsed time: 0:07:50
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_control 
+# Start time: 19:21:35 on Aug 06,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "multi_cycle_control(behave)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_multi_cycle_control(behave)#1
+# Loading work.multi_cycle_control(behave)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:36:51 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 19:36:51 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:36:51 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_multi_cycle_control
+# -- Compiling architecture behave of tb_multi_cycle_control
+# ** Warning: ../sims/tb_multi_cycle_control.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 19:36:52 on Aug 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# End time: 19:36:52 on Aug 06,2020, Elapsed time: 0:15:17
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_control 
+# Start time: 19:36:52 on Aug 06,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "multi_cycle_control(behave)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_multi_cycle_control(behave)#1
+# Loading work.multi_cycle_control(behave)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do run_multi_cycle_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:37:50 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 19:37:50 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:37:50 on Aug 06,2020
+# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_multi_cycle_control
+# -- Compiling architecture behave of tb_multi_cycle_control
+# ** Warning: ../sims/tb_multi_cycle_control.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 19:37:50 on Aug 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 19:37:51 on Aug 06,2020, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_control 
+# Start time: 19:37:51 on Aug 06,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "multi_cycle_control(behave)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_multi_cycle_control(behave)#1
+# Loading work.multi_cycle_control(behave)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+find drivers -source -time {9906 ps} -cause sim:/tb_multi_cycle_control/clk
