@@ -110,12 +110,12 @@ begin
     ----------------------------------------------------
     -- computes the next value for the program counter
     ----------------------------------------------------
-    pc_n_update : process(pc_src) begin
+    pc_n_update : process(all) begin
         case pc_src is
             when "00" => pc_n <= alu_out;
             when "01" => pc_n <= alu_out_d1;
-            when "01" => pc_n <= jump_addr;
-            when "01" => pc_n <= (others => '-');
+            when "10" => pc_n <= jump_addr;
+            when others => pc_n <= (others => '-');
         end case;
     end process pc_n_update;
 
@@ -151,6 +151,8 @@ begin
     -- wires and simple muxes
     data_wr     <= reg_rd2_d1;
     jump_addr   <= (pc(31 downto 28), instr(25 downto 0), "00");
+    sign_imm    <= (31 downto 16 => instr(15), 15 downto 0 => instr(15 downto 0));
+
 
     mem_addr    <= alu_out_d1          when (i_or_d = '1')     else pc;
     reg_wr_addr <= instr(15 downto 11) when (reg_dst = '1')    else instr(20 downto 16);
@@ -181,7 +183,7 @@ begin
     );
 
     -- combinational decision logic to determine the ALU operands
-    src_b_mux : process(src_b_ctrl, src_b_ctrl) begin
+    src_b_mux : process(all) begin
         -- src_a 2 mux between reg file and pc
         src_a <= reg_rd1_d1 when (src_a_ctrl = '1') else pc;
 
@@ -191,6 +193,7 @@ begin
             when "01" => src_b <= 32d"4";
             when "10" => src_b <= sign_imm;
             when "11" => src_b <= std_logic_vector(shift_left(signed(sign_imm), 2));
+            when others => src_b <= (others => '-');
         end case;
     end process src_b_mux;
 
