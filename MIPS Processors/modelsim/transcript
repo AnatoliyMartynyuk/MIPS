@@ -15,7 +15,7 @@
 do run_multi_cycle_datapath.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:48:36 on Aug 07,2020
+# Start time: 16:07:11 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -25,68 +25,82 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity multi_cycle_datapath
 # -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# ** Error: ../srcs/multi_cycle_datapath.vhd(117): (vcom-1342) Choice value "01" duplicates prior choice value at line 116.
-# ** Error: ../srcs/multi_cycle_datapath.vhd(118): (vcom-1342) Choice value "01" duplicates prior choice value at line 116.
-# ** Error: ../srcs/multi_cycle_datapath.vhd(114): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: ../srcs/multi_cycle_datapath.vhd(189): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: ../srcs/multi_cycle_datapath.vhd(197): VHDL Compiler exiting
-# End time: 18:48:37 on Aug 07,2020, Elapsed time: 0:00:01
-# Errors: 5, Warnings: 1
-# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
-# Error in macro ./run_multi_cycle_datapath.do line 5
-# C:/modeltech64_10.5c/win64/vcom failed.
-#     while executing
-# "vcom -work work "../srcs/multi_cycle_datapath.vhd""
-do run_multi_cycle_datapath.do
+# End time: 16:07:12 on Aug 08,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:07:12 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture behavioral of register_file
+# End time: 16:07:12 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:07:12 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity ALU
+# -- Compiling architecture behavioral of ALU
+# End time: 16:07:12 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:07:12 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_multi_cycle_datapath
+# -- Compiling architecture behave of tb_multi_cycle_datapath
+# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:07:12 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
+# Start time: 16:07:12 on Aug 08,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_multi_cycle_datapath(behave)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_lodo run_MIPS_multi_cycle.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:49:07 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
+# Start time: 16:13:09 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/MIPS_multi_cycle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# ** Error: ../srcs/multi_cycle_datapath.vhd(114): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: ../srcs/multi_cycle_datapath.vhd(189): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: ../srcs/multi_cycle_datapath.vhd(197): VHDL Compiler exiting
-# End time: 18:49:08 on Aug 07,2020, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 1
-# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
-# Error in macro ./run_multi_cycle_datapath.do line 5
-# C:/modeltech64_10.5c/win64/vcom failed.
-#     while executing
-# "vcom -work work "../srcs/multi_cycle_datapath.vhd""
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:50:05 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# ** Error: ../srcs/multi_cycle_datapath.vhd(118): near "others": (vcom-1576) expecting => or '|' or '!'.
-# End time: 18:50:05 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity MIPS_multi_cycle
+# -- Compiling architecture struct of MIPS_multi_cycle
+# ** Error: ../srcs/MIPS_multi_cycle.vhd(88): near "w": (vcom-1576) expecting BEGIN.
+# End time: 16:13:09 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: C:/modeltech64_10.5c/win64/vcom failed.
-# Error in macro ./run_multi_cycle_datapath.do line 5
+# Error in macro ./run_MIPS_multi_cycle.do line 5
 # C:/modeltech64_10.5c/win64/vcom failed.
 #     while executing
-# "vcom -work work "../srcs/multi_cycle_datapath.vhd""
-do run_multi_cycle_datapath.do
+# "vcom -work work "../srcs/MIPS_multi_cycle.vhd""
+do run_MIPS_multi_cycle.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:50:39 on Aug 07,2020
+# Start time: 16:13:26 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_multi_cycle
+# -- Compiling architecture struct of MIPS_multi_cycle
+# End time: 16:13:26 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:13:26 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -96,11 +110,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity multi_cycle_datapath
 # -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 18:50:39 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# End time: 16:13:27 on Aug 08,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:50:39 on Aug 07,2020
+# Start time: 16:13:27 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -108,10 +121,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture behavioral of register_file
-# End time: 18:50:39 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:13:27 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:50:39 on Aug 07,2020
+# Start time: 16:13:27 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -120,270 +133,102 @@ do run_multi_cycle_datapath.do
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture behavioral of ALU
-# End time: 18:50:39 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:13:27 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:50:39 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(1): (vcom-1598) Library "iee" not found.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(2): (vcom-1136) Unknown identifier "ieee".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(4): VHDL Compiler exiting
-# End time: 18:50:39 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
-# Error in macro ./run_multi_cycle_datapath.do line 9
-# C:/modeltech64_10.5c/win64/vcom failed.
-#     while executing
-# "vcom -work work "../sims/tb_multi_cycle_datapath.vhd""
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:50:58 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
+# Start time: 16:13:27 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 18:50:58 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 16:13:27 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:13:27 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../sims/tb_MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_MIPS_multi_cycle
+# -- Compiling architecture behave of tb_MIPS_multi_cycle
+# ** Warning: ../sims/tb_MIPS_multi_cycle.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:13:27 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:50:58 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 18:50:58 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:50:58 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 18:50:58 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:50:58 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# ** Error: (vcom-11) Could not find ieee.logic.
-# ** Error (suppressible): ../sims/tb_multi_cycle_datapath.vhd(2): (vcom-1195) Cannot find expanded name "ieee.logic".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(2): Unknown expanded name.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(4): VHDL Compiler exiting
-# End time: 18:50:58 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
-# Error in macro ./run_multi_cycle_datapath.do line 9
-# C:/modeltech64_10.5c/win64/vcom failed.
-#     while executing
-# "vcom -work work "../sims/tb_multi_cycle_datapath.vhd""
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:51:15 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 18:51:15 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:51:15 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 18:51:15 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:51:15 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 18:51:15 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:51:15 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(122): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(122): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(134): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(134): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(139): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(139): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(151): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(151): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(156): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(156): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(168): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(168): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(175): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(175): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(187): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(187): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(192): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(192): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(204): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(204): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(215): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(215): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(227): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(227): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(232): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(232): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(244): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(244): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(249): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(249): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(261): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(261): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(268): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(268): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(280): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(280): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(285): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(285): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(297): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(297): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(308): VHDL Compiler exiting
-# End time: 18:51:15 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 41, Warnings: 1
-# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
-# Error in macro ./run_multi_cycle_datapath.do line 9
-# C:/modeltech64_10.5c/win64/vcom failed.
-#     while executing
-# "vcom -work work "../sims/tb_multi_cycle_datapath.vhd""
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:54:43 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 18:54:43 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:54:43 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 18:54:43 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:54:43 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 18:54:43 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:54:43 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 18:54:43 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 18:54:44 on Aug 07,2020
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_MIPS_multi_cycle 
+# Start time: 16:13:27 on Aug 08,2020
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "multi_cycle_control(behave)".
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
+# Loading work.tb_mips_multi_cycle(behave)#1
+# Loading work.mips_multi_cycle(struct)#1
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading ieee.numeric_std(body)
 # Loading work.multi_cycle_datapath(behave)#1
 # Loading work.register_file(behavioral)#1
 # Loading work.alu(behavioral)#1
-# ** Error: Cannot open macro file: wave_multi_cycle_datapath.do
-# Error in macro ./run_multi_cycle_datapath.do line 15
-# Cannot open macro file: wave_multi_cycle_datapath.do
+# Loading work.multi_cycle_control(behave)#1
+# ** Error: Cannot open macro file: wave_MIPS_multi_cycle.do
+# Error in macro ./run_MIPS_multi_cycle.do line 19
+# Cannot open macro file: wave_MIPS_multi_cycle.do
 #     while executing
-# "do wave_multi_cycle_datapath.do"
+# "do wave_MIPS_multi_cycle.do"
+add wave -position end  sim:/tb_mips_multi_cycle/clk
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlfttgy2xf".
+#           Attempting to use alternate WLF file "./wlftxjfe1b".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttgy2xf
-# Paste insertion failed: wave_multi_cycle_datapath: (vish-4014) No objects found matching 'wave_multi_cycle_datapath'.
-add wave -position end  sim:/tb_multi_cycle_datapath/clk
-add wave -position end  sim:/tb_multi_cycle_datapath/reset
-add wave -position end  sim:/tb_multi_cycle_datapath/mem_word
-add wave -position end  sim:/tb_multi_cycle_datapath/branch
-add wave -position end  sim:/tb_multi_cycle_datapath/pc_wr
-add wave -position end  sim:/tb_multi_cycle_datapath/i_or_d
-add wave -position end  sim:/tb_multi_cycle_datapath/instr_wr
-add wave -position end  sim:/tb_multi_cycle_datapath/reg_wr
-add wave -position end  sim:/tb_multi_cycle_datapath/mem_to_reg
-add wave -position end  sim:/tb_multi_cycle_datapath/reg_dst
-add wave -position end  sim:/tb_multi_cycle_datapath/src_a_ctrl
-add wave -position end  sim:/tb_multi_cycle_datapath/pc_src
-add wave -position end  sim:/tb_multi_cycle_datapath/src_b_ctrl
-add wave -position end  sim:/tb_multi_cycle_datapath/alu_ctrl
-add wave -position end  sim:/tb_multi_cycle_datapath/mem_addr
-add wave -position end  sim:/tb_multi_cycle_datapath/data_wr
-add wave -position end  sim:/tb_multi_cycle_datapath/zero
-add wave -position end  sim:/tb_multi_cycle_datapath/sim_done
-add wave -position end  sim:/tb_multi_cycle_datapath/clk_period
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_datapath.do}
-do run_multi_cycle_datapath.do
+#           Using alternate file: ./wlftxjfe1b
+add wave -position end  sim:/tb_mips_multi_cycle/reset
+add wave -position end  sim:/tb_mips_multi_cycle/mem_word
+add wave -position end  sim:/tb_mips_multi_cycle/mem_write
+add wave -position end  sim:/tb_mips_multi_cycle/mem_addr
+add wave -position end  sim:/tb_mips_multi_cycle/data_wr
+add wave -position 1  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file/memory
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU/a
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU/b
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU/funct
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU/output
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/pc
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/pc_n
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/mem_data
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/sign_imm
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/reg_rd1
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/reg_rd2
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/alu_out
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/branch
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/pc_wr
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/i_or_d
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/instr_wr
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/reg_wr
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/mem_to_reg
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/reg_dst
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/mem_write
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/src_a_ctrl
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/pc_src
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/src_b_ctrl
+add wave -position end  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/alu_ctrl
+add wave -position 2  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/ps
+add wave -position 3  sim:/tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_control/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_MIPS_multi_cycle.do}
+do run_MIPS_multi_cycle.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:56:36 on Aug 07,2020
+# Start time: 16:18:49 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_multi_cycle
+# -- Compiling architecture struct of MIPS_multi_cycle
+# End time: 16:18:49 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:18:49 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -393,11 +238,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity multi_cycle_datapath
 # -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 18:56:36 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# End time: 16:18:49 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:56:36 on Aug 07,2020
+# Start time: 16:18:49 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -405,10 +249,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture behavioral of register_file
-# End time: 18:56:36 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:18:49 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:56:36 on Aug 07,2020
+# Start time: 16:18:49 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -417,80 +261,84 @@ do run_multi_cycle_datapath.do
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture behavioral of ALU
-# End time: 18:56:36 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:18:49 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:56:36 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
+# Start time: 16:18:49 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 18:56:36 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 16:18:49 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:18:49 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../sims/tb_MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_MIPS_multi_cycle
+# -- Compiling architecture behave of tb_MIPS_multi_cycle
+# ** Warning: ../sims/tb_MIPS_multi_cycle.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:18:49 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# End time: 18:56:37 on Aug 07,2020, Elapsed time: 0:01:53
-# Errors: 4, Warnings: 4
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 18:56:37 on Aug 07,2020
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# End time: 16:18:51 on Aug 08,2020, Elapsed time: 0:05:24
+# Errors: 3, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_MIPS_multi_cycle 
+# Start time: 16:18:51 on Aug 08,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
+# Loading work.tb_mips_multi_cycle(behave)#1
+# Loading work.mips_multi_cycle(struct)#1
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading ieee.numeric_std(body)
 # Loading work.multi_cycle_datapath(behave)#1
 # Loading work.register_file(behavioral)#1
 # Loading work.alu(behavioral)#1
+# Loading work.multi_cycle_control(behave)#1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlfth6qrgb".
+#           Attempting to use alternate WLF file "./wlft0czj3i".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfth6qrgb
+#           Using alternate file: ./wlft0czj3i
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 2  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 35 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 75 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 75 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 85 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_datapath.do}
-add wave -position 0  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file/memory
-add wave -position 1  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU/a
-add wave -position 2  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU/b
-add wave -position 3  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU/output
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_datapath.do}
-do run_multi_cycle_datapath.do
+#    Time: 5 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_MIPS_multi_cycle.do}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_MIPS_multi_cycle.do}
+do run_MIPS_multi_cycle.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:58:36 on Aug 07,2020
+# Start time: 16:28:49 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_multi_cycle
+# -- Compiling architecture struct of MIPS_multi_cycle
+# End time: 16:28:49 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:28:49 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -500,11 +348,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity multi_cycle_datapath
 # -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 18:58:36 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# End time: 16:28:49 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:58:36 on Aug 07,2020
+# Start time: 16:28:49 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -512,10 +359,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture behavioral of register_file
-# End time: 18:58:37 on Aug 07,2020, Elapsed time: 0:00:01
+# End time: 16:28:49 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:58:37 on Aug 07,2020
+# Start time: 16:28:49 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -524,381 +371,84 @@ do run_multi_cycle_datapath.do
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture behavioral of ALU
-# End time: 18:58:37 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:28:50 on Aug 08,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 18:58:37 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
+# Start time: 16:28:50 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 18:58:37 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# End time: 18:58:38 on Aug 07,2020, Elapsed time: 0:02:01
-# Errors: 0, Warnings: 18
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 18:58:38 on Aug 07,2020
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.multi_cycle_datapath(behave)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.alu(behavioral)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlftn3b2qa".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftn3b2qa
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 35 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 75 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 75 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 85 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-find drivers -source -time {21591 ps} -cause sim:/tb_multi_cycle_datapath/mem_word
-find drivers -source -time {21591 ps} -cause sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU/a
-add wave -position 4  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/instr
-add wave -position 5  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/mem_data
-add wave -position 6  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/reg_rd1
-add wave -position 7  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/reg_rd2
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_datapath.do}
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 21:59:18 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 21:59:18 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 21:59:18 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 21:59:18 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 16:28:50 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 21:59:18 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
+# Start time: 16:28:50 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../sims/tb_MIPS_multi_cycle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 21:59:18 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 21:59:18 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 21:59:19 on Aug 07,2020, Elapsed time: 0:00:01
+# -- Compiling entity tb_MIPS_multi_cycle
+# -- Compiling architecture behave of tb_MIPS_multi_cycle
+# ** Warning: ../sims/tb_MIPS_multi_cycle.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:28:50 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# End time: 21:59:20 on Aug 07,2020, Elapsed time: 3:00:42
-# Errors: 0, Warnings: 18
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 21:59:20 on Aug 07,2020
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.multi_cycle_datapath(behave)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.alu(behavioral)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlft23eefv".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft23eefv
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 35 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 75 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 75 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 85 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-find drivers -source -time {28247 ps} -cause sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/instr
-add wave -position 9  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/sign_imm
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_datapath.do}
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:01:25 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(184): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 22:01:25 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:01:25 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 22:01:25 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:01:25 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 22:01:25 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:01:25 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 22:01:25 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# End time: 22:01:26 on Aug 07,2020, Elapsed time: 0:02:06
-# Errors: 0, Warnings: 18
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 22:01:26 on Aug 07,2020
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.multi_cycle_datapath(behave)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.alu(behavioral)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlft89ydte".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft89ydte
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 35 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 75 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 75 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 85 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:03:16 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(186): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 22:03:16 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:03:16 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 22:03:16 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:03:16 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 22:03:16 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:03:16 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 22:03:17 on Aug 07,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
-# End time: 22:03:17 on Aug 07,2020, Elapsed time: 0:01:51
-# Errors: 0, Warnings: 18
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 22:03:17 on Aug 07,2020
+# End time: 16:28:51 on Aug 08,2020, Elapsed time: 0:10:00
+# Errors: 0, Warnings: 10
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_MIPS_multi_cycle 
+# Start time: 16:28:51 on Aug 08,2020
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
+# Loading work.tb_mips_multi_cycle(behave)#1
+# Loading work.mips_multi_cycle(struct)#1
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading ieee.numeric_std(body)
 # Loading work.multi_cycle_datapath(behave)#1
 # Loading work.register_file(behavioral)#1
 # Loading work.alu(behavioral)#1
+# Loading work.multi_cycle_control(behave)#1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlft2x981r".
+#           Attempting to use alternate WLF file "./wlft0i9x43".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft2x981r
+#           Using alternate file: ./wlft0i9x43
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 2  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-add wave -position 5  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/pc
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_datapath.do}
-do run_multi_cycle_datapath.do
+#    Time: 5 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+find drivers -source -time {196540 ps} -cause sim:/tb_mips_multi_cycle/data_wr
+find drivers -source -time {191295 ps} -cause ALU
+do run_MIPS_multi_cycle.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:07:43 on Aug 07,2020
+# Start time: 16:33:13 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_multi_cycle
+# -- Compiling architecture struct of MIPS_multi_cycle
+# End time: 16:33:13 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:33:13 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -908,11 +458,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity multi_cycle_datapath
 # -- Compiling architecture behave of multi_cycle_datapath
-# ** Warning: ../srcs/multi_cycle_datapath.vhd(186): (vcom-1445) Duplicate signal "src_b_ctrl" found in sensitivity list.
-# End time: 22:07:43 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# End time: 16:33:13 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:07:43 on Aug 07,2020
+# Start time: 16:33:13 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -920,10 +469,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture behavioral of register_file
-# End time: 22:07:43 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:33:14 on Aug 08,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:07:43 on Aug 07,2020
+# Start time: 16:33:14 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -932,181 +481,96 @@ do run_multi_cycle_datapath.do
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture behavioral of ALU
-# End time: 22:07:43 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:33:14 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:07:43 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
+# Start time: 16:33:14 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 22:07:43 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 16:33:14 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:33:14 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../sims/tb_MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_MIPS_multi_cycle
+# -- Compiling architecture behave of tb_MIPS_multi_cycle
+# ** Warning: ../sims/tb_MIPS_multi_cycle.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:33:14 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# End time: 22:07:44 on Aug 07,2020, Elapsed time: 0:04:27
-# Errors: 0, Warnings: 14
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 22:07:44 on Aug 07,2020
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.multi_cycle_datapath(behave)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.alu(behavioral)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlftmbrajs".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftmbrajs
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-add wave -position 6  sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/pc_n
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_datapath.do}
-restart -f
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-run -all
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:12:36 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# End time: 22:12:36 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:12:36 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 22:12:36 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:12:36 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 22:12:36 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:12:36 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 22:12:36 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# End time: 22:12:37 on Aug 07,2020, Elapsed time: 0:04:53
-# Errors: 0, Warnings: 23
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 22:12:37 on Aug 07,2020
+# End time: 16:33:15 on Aug 08,2020, Elapsed time: 0:04:24
+# Errors: 0, Warnings: 10
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_MIPS_multi_cycle 
+# Start time: 16:33:15 on Aug 08,2020
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
+# Loading work.tb_mips_multi_cycle(behave)#1
+# Loading work.mips_multi_cycle(struct)#1
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading ieee.numeric_std(body)
 # Loading work.multi_cycle_datapath(behave)#1
 # Loading work.register_file(behavioral)#1
 # Loading work.alu(behavioral)#1
+# Loading work.multi_cycle_control(behave)#1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlftgs2v19".
+#           Attempting to use alternate WLF file "./wlftykcxmj".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftgs2v19
+#           Using alternate file: ./wlftykcxmj
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 2  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 225 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-do run_multi_cycle_datapath.do
+#    Time: 225 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 265 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 265 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 305 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 345 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 385 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+do run_MIPS_multi_cycle.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:17:28 on Aug 07,2020
+# Start time: 16:35:16 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_multi_cycle
+# -- Compiling architecture struct of MIPS_multi_cycle
+# End time: 16:35:16 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:35:16 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1116,10 +580,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity multi_cycle_datapath
 # -- Compiling architecture behave of multi_cycle_datapath
-# End time: 22:17:28 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:35:16 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:17:28 on Aug 07,2020
+# Start time: 16:35:16 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1127,10 +591,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture behavioral of register_file
-# End time: 22:17:28 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:35:16 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:17:28 on Aug 07,2020
+# Start time: 16:35:16 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1139,136 +603,96 @@ do run_multi_cycle_datapath.do
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture behavioral of ALU
-# End time: 22:17:28 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:35:16 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:17:28 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
+# Start time: 16:35:16 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(350): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(350): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(362): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(362): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(421): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(421): (vcom-1136) Unknown identifier "alu_op".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(433): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(433): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(444): VHDL Compiler exiting
-# End time: 22:17:28 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 9, Warnings: 1
-# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
-# Error in macro ./run_multi_cycle_datapath.do line 9
-# C:/modeltech64_10.5c/win64/vcom failed.
-#     while executing
-# "vcom -work work "../sims/tb_multi_cycle_datapath.vhd""
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:19:52 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# End time: 22:19:53 on Aug 07,2020, Elapsed time: 0:00:01
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 16:35:16 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:19:53 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
+# Start time: 16:35:16 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../sims/tb_MIPS_multi_cycle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 22:19:53 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:19:53 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 22:19:53 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:19:53 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 22:19:53 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity tb_MIPS_multi_cycle
+# -- Compiling architecture behave of tb_MIPS_multi_cycle
+# ** Warning: ../sims/tb_MIPS_multi_cycle.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:35:16 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# End time: 22:19:54 on Aug 07,2020, Elapsed time: 0:07:17
-# Errors: 12, Warnings: 13
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 22:19:54 on Aug 07,2020
+# End time: 16:35:18 on Aug 08,2020, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 17
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_MIPS_multi_cycle 
+# Start time: 16:35:18 on Aug 08,2020
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
+# Loading work.tb_mips_multi_cycle(behave)#1
+# Loading work.mips_multi_cycle(struct)#1
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading ieee.numeric_std(body)
 # Loading work.multi_cycle_datapath(behave)#1
 # Loading work.register_file(behavioral)#1
 # Loading work.alu(behavioral)#1
+# Loading work.multi_cycle_control(behave)#1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlftezjn26".
+#           Attempting to use alternate WLF file "./wlft6g2q4v".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftezjn26
+#           Using alternate file: ./wlft6g2q4v
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 2  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 225 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 225 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 265 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 265 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 305 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-find drivers -source -time {70425 ps} -cause sim:/tb_multi_cycle_datapath/pc_wr
-do run_multi_cycle_datapath.do
+#    Time: 345 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 385 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+do run_MIPS_multi_cycle.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:34:32 on Aug 07,2020
+# Start time: 16:37:04 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_multi_cycle
+# -- Compiling architecture struct of MIPS_multi_cycle
+# End time: 16:37:04 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:37:04 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1278,10 +702,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity multi_cycle_datapath
 # -- Compiling architecture behave of multi_cycle_datapath
-# End time: 22:34:32 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:37:04 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:34:32 on Aug 07,2020
+# Start time: 16:37:04 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1289,10 +713,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture behavioral of register_file
-# End time: 22:34:32 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:37:04 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:34:32 on Aug 07,2020
+# Start time: 16:37:04 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1301,138 +725,96 @@ do run_multi_cycle_datapath.do
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture behavioral of ALU
-# End time: 22:34:32 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:37:04 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:34:32 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
+# Start time: 16:37:04 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(489): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(489): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(506): Illegal target for signal assignment.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(506): (vcom-1136) Unknown identifier "mem_write".
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(517): VHDL Compiler exiting
-# End time: 22:34:32 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 1
-# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
-# Error in macro ./run_multi_cycle_datapath.do line 9
-# C:/modeltech64_10.5c/win64/vcom failed.
-#     while executing
-# "vcom -work work "../sims/tb_multi_cycle_datapath.vhd""
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:34:59 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# End time: 22:34:59 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 16:37:04 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:34:59 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
+# Start time: 16:37:04 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../sims/tb_MIPS_multi_cycle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 22:34:59 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:34:59 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 22:34:59 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:34:59 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 22:34:59 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity tb_MIPS_multi_cycle
+# -- Compiling architecture behave of tb_MIPS_multi_cycle
+# ** Warning: ../sims/tb_MIPS_multi_cycle.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:37:04 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# End time: 22:35:00 on Aug 07,2020, Elapsed time: 0:15:06
-# Errors: 8, Warnings: 17
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 22:35:00 on Aug 07,2020
+# End time: 16:37:06 on Aug 08,2020, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 17
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_MIPS_multi_cycle 
+# Start time: 16:37:06 on Aug 08,2020
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
+# Loading work.tb_mips_multi_cycle(behave)#1
+# Loading work.mips_multi_cycle(struct)#1
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading ieee.numeric_std(body)
 # Loading work.multi_cycle_datapath(behave)#1
 # Loading work.register_file(behavioral)#1
 # Loading work.alu(behavioral)#1
+# Loading work.multi_cycle_control(behave)#1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlftvy73kb".
+#           Attempting to use alternate WLF file "./wlftef60kg".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftvy73kb
+#           Using alternate file: ./wlftef60kg
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 2  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 225 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 225 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 265 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 265 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 305 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 345 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-find drivers -source -time {14859 ps} -chasex sim:/tb_multi_cycle_datapath/instr_wr
-find drivers -source -time {197360 ps} -cause sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/mem_data
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Anatoliy/Documents/GitHub/MIPS/MIPS Processors/modelsim/wave_multi_cycle_datapath.do}
-do run_multi_cycle_datapath.do
+#    Time: 385 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+do run_MIPS_multi_cycle.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:40:24 on Aug 07,2020
+# Start time: 16:40:12 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_multi_cycle
+# -- Compiling architecture struct of MIPS_multi_cycle
+# End time: 16:40:12 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:40:12 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1442,10 +824,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity multi_cycle_datapath
 # -- Compiling architecture behave of multi_cycle_datapath
-# End time: 22:40:24 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:40:12 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:40:24 on Aug 07,2020
+# Start time: 16:40:12 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1453,10 +835,10 @@ do run_multi_cycle_datapath.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture behavioral of register_file
-# End time: 22:40:25 on Aug 07,2020, Elapsed time: 0:00:01
+# End time: 16:40:12 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:40:25 on Aug 07,2020
+# Start time: 16:40:12 on Aug 08,2020
 # vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1465,787 +847,202 @@ do run_multi_cycle_datapath.do
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture behavioral of ALU
-# End time: 22:40:25 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 16:40:12 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:40:25 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
+# Start time: 16:40:12 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(753): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: ../sims/tb_multi_cycle_datapath.vhd(791): VHDL Compiler exiting
-# End time: 22:40:25 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 1
-# ** Error: C:/modeltech64_10.5c/win64/vcom failed.
-# Error in macro ./run_multi_cycle_datapath.do line 9
-# C:/modeltech64_10.5c/win64/vcom failed.
-#     while executing
-# "vcom -work work "../sims/tb_multi_cycle_datapath.vhd""
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:40:46 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# End time: 22:40:46 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 16:40:12 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:40:46 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
+# Start time: 16:40:12 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../sims/tb_MIPS_multi_cycle.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 22:40:46 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:40:46 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 22:40:46 on Aug 07,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:40:46 on Aug 07,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 22:40:46 on Aug 07,2020, Elapsed time: 0:00:00
+# -- Compiling entity tb_MIPS_multi_cycle
+# -- Compiling architecture behave of tb_MIPS_multi_cycle
+# ** Warning: ../sims/tb_MIPS_multi_cycle.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:40:12 on Aug 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# End time: 22:40:47 on Aug 07,2020, Elapsed time: 0:05:47
-# Errors: 5, Warnings: 19
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 22:40:47 on Aug 07,2020
+# End time: 16:40:14 on Aug 08,2020, Elapsed time: 0:03:08
+# Errors: 0, Warnings: 17
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_MIPS_multi_cycle 
+# Start time: 16:40:14 on Aug 08,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "multi_cycle_control(behave)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_mips_multi_cycle(behave)#1
+# Loading work.mips_multi_cycle(struct)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.numeric_std(body)
+# Loading work.multi_cycle_datapath(behave)#1
+# Loading work.register_file(behavioral)#1
+# Loading work.alu(behavioral)#1
+# Loading work.multi_cycle_control(behave)#1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
+#           Attempting to use alternate WLF file "./wlftyxfdq7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftyxfdq7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 225 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 225 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 265 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 265 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 305 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 345 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 385 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
+do run_MIPS_multi_cycle.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:42:39 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_multi_cycle
+# -- Compiling architecture struct of MIPS_multi_cycle
+# End time: 16:42:40 on Aug 08,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:42:40 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity multi_cycle_datapath
+# -- Compiling architecture behave of multi_cycle_datapath
+# End time: 16:42:40 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:42:40 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture behavioral of register_file
+# End time: 16:42:40 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:42:40 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity ALU
+# -- Compiling architecture behavioral of ALU
+# End time: 16:42:40 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:42:40 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../srcs/multi_cycle_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multi_cycle_control
+# -- Compiling architecture behave of multi_cycle_control
+# End time: 16:42:40 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:42:40 on Aug 08,2020
+# vcom -reportprogress 300 -work work ../sims/tb_MIPS_multi_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_MIPS_multi_cycle
+# -- Compiling architecture behave of tb_MIPS_multi_cycle
+# ** Warning: ../sims/tb_MIPS_multi_cycle.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:42:40 on Aug 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:42:41 on Aug 08,2020, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 17
+# vsim -voptargs=""+acc"" -t 1ps -lib work tb_MIPS_multi_cycle 
+# Start time: 16:42:41 on Aug 08,2020
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
+# Loading work.tb_mips_multi_cycle(behave)#1
+# Loading work.mips_multi_cycle(struct)#1
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading ieee.numeric_std(body)
 # Loading work.multi_cycle_datapath(behave)#1
 # Loading work.register_file(behavioral)#1
 # Loading work.alu(behavioral)#1
+# Loading work.multi_cycle_control(behave)#1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlfteti5zf".
+#           Attempting to use alternate WLF file "./wlftx4cd5a".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfteti5zf
+#           Using alternate file: ./wlftx4cd5a
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_register_file
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 2  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 0 ps  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 3  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 5 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 225 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 225 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 265 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 265 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 305 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
+#    Time: 345 ns  Iteration: 5  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:36:30 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# End time: 12:36:31 on Aug 08,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:36:31 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 12:36:31 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:36:31 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 12:36:31 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:36:31 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 12:36:31 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# End time: 12:36:32 on Aug 08,2020, Elapsed time: 13:55:45
-# Errors: 0, Warnings: 26
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 12:36:32 on Aug 08,2020
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.multi_cycle_datapath(behave)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.alu(behavioral)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlftabmhit".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftabmhit
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-find drivers -source -time {198306 ps} -cause sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/pc_n
-# Causality operation skipped due to absence of debug database file
-# WARNING: No extended dataflow license exists
-# WARNING: No extended dataflow license exists
-find drivers -source -time {198306 ps} -cause sim:/tb_multi_cycle_datapath/u_multi_cycle_datapath/pc_n
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:45:06 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# End time: 12:45:06 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:45:06 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 12:45:06 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:45:06 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 12:45:06 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:45:06 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 12:45:06 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# End time: 12:45:07 on Aug 08,2020, Elapsed time: 0:08:35
-# Errors: 5, Warnings: 29
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 12:45:07 on Aug 08,2020
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.multi_cycle_datapath(behave)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.alu(behavioral)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlftafg5r9".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftafg5r9
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:49:01 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# End time: 12:49:01 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:49:01 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 12:49:01 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:49:01 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 12:49:01 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:49:01 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 12:49:01 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# End time: 12:49:02 on Aug 08,2020, Elapsed time: 0:03:55
-# Errors: 0, Warnings: 26
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 12:49:02 on Aug 08,2020
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.multi_cycle_datapath(behave)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.alu(behavioral)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlftnsbe75".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftnsbe75
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 395 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 395 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:55:48 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# End time: 12:55:48 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:55:48 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 12:55:48 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:55:48 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 12:55:48 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:55:48 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 12:55:48 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# End time: 12:55:49 on Aug 08,2020, Elapsed time: 0:06:47
-# Errors: 13, Warnings: 29
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 12:55:49 on Aug 08,2020
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.multi_cycle_datapath(behave)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.alu(behavioral)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlft73xmdx".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft73xmdx
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 395 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 395 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 465 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 465 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-do run_multi_cycle_datapath.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:57:57 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity multi_cycle_datapath
-# -- Compiling architecture behave of multi_cycle_datapath
-# End time: 12:57:57 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:57:57 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
-# End time: 12:57:57 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:57:57 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../srcs/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity ALU
-# -- Compiling architecture behavioral of ALU
-# End time: 12:57:57 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 12:57:57 on Aug 08,2020
-# vcom -reportprogress 300 -work work ../sims/tb_multi_cycle_datapath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_multi_cycle_datapath
-# -- Compiling architecture behave of tb_multi_cycle_datapath
-# ** Warning: ../sims/tb_multi_cycle_datapath.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 12:57:57 on Aug 08,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# End time: 12:57:58 on Aug 08,2020, Elapsed time: 0:02:09
-# Errors: 0, Warnings: 30
-# vsim -voptargs=""+acc"" -t 1ps -lib work tb_multi_cycle_datapath 
-# Start time: 12:57:58 on Aug 08,2020
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_multi_cycle_datapath(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.numeric_std(body)
-# Loading work.multi_cycle_datapath(behave)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.alu(behavioral)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Anatoliy  Hostname: DESKTOP-S7TI5UP  ProcessID: 14472
-#           Attempting to use alternate WLF file "./wlft7s8b9e".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7s8b9e
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_register_file
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 25 ns  Iteration: 4  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 65 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 155 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 195 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 235 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 275 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 315 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 355 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 395 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 395 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 465 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 465 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 505 ns  Iteration: 2  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 505 ns  Iteration: 3  Instance: /tb_multi_cycle_datapath/u_multi_cycle_datapath/u_ALU
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# End time: 13:07:25 on Aug 08,2020, Elapsed time: 0:09:27
-# Errors: 5, Warnings: 32
+#    Time: 385 ns  Iteration: 4  Instance: /tb_mips_multi_cycle/u_MIPS_multi_cycle/u_multi_cycle_datapath/u_ALU

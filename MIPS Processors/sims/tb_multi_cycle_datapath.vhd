@@ -24,6 +24,7 @@ architecture behave of tb_multi_cycle_datapath is
         src_b_ctrl  : in std_logic_vector( 1 downto 0);
         alu_ctrl    : in std_logic_vector( 2 downto 0);
     
+        instr       : out std_logic_vector(31 downto 0);
         mem_addr    : out std_logic_vector(31 downto 0);
         data_wr     : out std_logic_vector(31 downto 0);
         zero        : out std_logic
@@ -49,6 +50,7 @@ architecture behave of tb_multi_cycle_datapath is
     signal alu_ctrl    : std_logic_vector( 2 downto 0);
     
     -- outputs
+    signal instr       : std_logic_vector(31 downto 0);
     signal mem_addr    : std_logic_vector(31 downto 0);
     signal data_wr     : std_logic_vector(31 downto 0);
     signal zero        : std_logic;
@@ -78,6 +80,7 @@ begin
         src_b_ctrl  => src_b_ctrl   ,
         alu_ctrl    => alu_ctrl     ,
             
+        instr       => instr        ,
         mem_addr    => mem_addr     ,
         data_wr     => data_wr      ,
         zero        => zero

@@ -21,6 +21,7 @@ port (
     src_b_ctrl  : in std_logic_vector( 1 downto 0);
     alu_ctrl    : in std_logic_vector( 2 downto 0);
 
+    instr       : out std_logic_vector(31 downto 0);
     mem_addr    : out std_logic_vector(31 downto 0);
     data_wr     : out std_logic_vector(31 downto 0);
     zero        : out std_logic
@@ -68,7 +69,6 @@ architecture behave of multi_cycle_datapath is
     signal jump_addr    : std_logic_vector(31 downto 0);
     signal pc_en        : std_logic;
 
-    signal instr        : std_logic_vector(31 downto 0);
     signal mem_data     : std_logic_vector(31 downto 0);
     signal sign_imm     : std_logic_vector(31 downto 0);
 

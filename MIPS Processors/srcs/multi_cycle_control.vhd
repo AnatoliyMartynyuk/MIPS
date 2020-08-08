@@ -63,7 +63,7 @@ begin
                     ns <= S_COMPUTE;
                 elsif (opcode = "000100") then                      -- if branch
                     ns <= S_BRANCH; 
-                elsif (opcode = "000010") then                      -- if addi
+                elsif (opcode = "001000") then                      -- if addi
                     ns <= S_ADDI_COMPUTE;
                 else                                                -- if jump
                     ns <= S_JUMP;
