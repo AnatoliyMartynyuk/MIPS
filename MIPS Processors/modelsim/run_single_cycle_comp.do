@@ -11,6 +11,8 @@ vcom -work work "../srcs/single_cycle_control.vhd"
 
 vcom -work work "../sims/tb_single_cycle_comp.vhd"
 
+vcom -work work "../srcs/MIPS_memory.vhd"
+
 # Call simulator
 vsim -voptargs="+acc" -t 1ps -lib work tb_single_cycle_comp
 
