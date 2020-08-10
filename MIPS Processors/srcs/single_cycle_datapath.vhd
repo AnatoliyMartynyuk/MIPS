@@ -45,7 +45,8 @@ architecture behave of single_cycle_datapath is
     end component register_file;
 
     ---------------------------------------------------------------------------
-    -- computation unit with the capacity to compute // TODO Fill in
+    -- command and ALU decoder set up for the instructions: add, subtract, 
+    -- and, or, slt, and not, and or not
     ---------------------------------------------------------------------------
     component ALU is
     port ( 

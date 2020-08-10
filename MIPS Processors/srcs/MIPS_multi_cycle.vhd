@@ -47,7 +47,8 @@ architecture struct of MIPS_multi_cycle is
 
 
     ---------------------------------------------------------------------------
-    -- command and ALU decoder set up for the instructions: // TODO Fill in
+    -- command and ALU decoder set up for the instructions: add, subtract, 
+    -- and, or, slt, and not, and or not
     ---------------------------------------------------------------------------
     component multi_cycle_control is
     port (

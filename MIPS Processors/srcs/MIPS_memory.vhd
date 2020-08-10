@@ -47,7 +47,7 @@ architecture behave of MIPS_memory is
         return memory_contents;
     end function;
 
-    signal memory : t_memory := init_memory_hfile("../srcs/instruction_mif.txt"); -- //TODO: put in correct file address
+    signal memory : t_memory := init_memory_hfile("../srcs/instruction_mif.txt");
 
 begin
     -- asynchronous reading from the memory

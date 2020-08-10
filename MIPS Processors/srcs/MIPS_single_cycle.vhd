@@ -46,7 +46,8 @@ architecture struct of MIPS_single_cycle is
 
 
     ---------------------------------------------------------------------------
-    -- command and ALU decoder set up for the instructions: // TODO Fill in
+    -- command and ALU decoder set up for the instructions: add, subtract, 
+    -- and, or, slt, and not, and or not
     ---------------------------------------------------------------------------
     component single_cycle_control is
     port ( 
