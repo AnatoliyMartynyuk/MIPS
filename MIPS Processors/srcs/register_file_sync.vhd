@@ -30,7 +30,7 @@ begin
     pr_read_neg_edge : process(clk)
     begin
 
-        if (falling_edge(clk)) begin
+        if (falling_edge(clk)) then
             -- addr/rd port 1
             if (addr_rd1 = "00000") then
                 data_rd1 <= x"00000000";
