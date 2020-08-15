@@ -5,7 +5,23 @@ use ieee.numeric_std.all;
 
 entity pipleined_datapath is
 port (
+    clk         : in std_logic;
+    reset       : in std_logic;
+    instr       : in std_logic_vector(31 downto 0);
+    mem_data    : in std_logic_vector(31 downto 0);
 
+    alu_ctrl    : in std_logic_vector( 2 downto 0);
+    pc_src      : in std_logic;
+    mem_to_reg  : in std_logic;
+    alu_src     : in std_logic;
+    reg_dst     : in std_logic;
+    reg_wr      : in std_logic;
+    jump        : in std_logic;
+
+    pc          : out std_logic_vector(31 downto 0);
+    alu_out     : out std_logic_vector(31 downto 0);
+    data_wr     : out std_logic_vector(31 downto 0);
+    zero        : out std_logic
 );
 end pipleined_datapath;
 
@@ -44,10 +60,116 @@ architecture behave of pipleined_datapath is
     end component ALU;
 
     -- ************************************************************************
-    -- internal signals
+    -- internal signals/wires
 
+    signal pc_n         : std_logic_vector(31 downto 0); -- next pc
+    signal pc_n_D       : std_logic_vector(31 downto 0);
+    signal pc_n_E       : std_logic_vector(31 downto 0);
+    signal pc_br        : std_logic_vector(31 downto 0); -- branch pc
+    signal pc_br_M      : std_logic_vector(31 downto 0);
 
+    signal instr_D      : std_logic_vector(31 downto 0);
+
+    signal r_addr       : std_logic_vector( 4 downto 0); -- r type reg wr addr
+    signal r_addr_E     : std_logic_vector( 4 downto 0);
+    signal i_addr       : std_logic_vector( 4 downto 0); -- i type reg wr addr
+    signal i_addr_E     : std_logic_vector( 4 downto 0);
+
+    signal sign_imm     : std_logic_vector(31 downto 0);
+    signal sign_imm_E   : std_logic_vector(31 downto 0);
 
 begin
+    ---------------------------------------------------------------------------------
+    -- The pipelined processor is split into 5 stages: fetch, decode, execute and
+    -- writeback. Signals propogating between these stages will be denoted with a
+    -- _F, _D, _E, _M, or _W if they propogated away from their original stage.
+    -- Exeternal memory is accessed during the fetch and memory stages. The register
+    -- file is accessed during the decode and writeback stages. The ALU is accessed
+    -- during the execute stage.
+    ---------------------------------------------------------------------------------
+
+    -- FETCH
+    ---------------------------------------------------------------------------------
+    pc_n <= pc + 4; 
+
+    -- updates the pc with either next instr or a branch or jump
+    pc_update_pr : process (clk) begin
+        if (reset = '1') then
+            pc <= (others => '0');
+        
+        elsif(rising_edge(clk)) then
+            -- branch
+            if (pc_src = '1') then
+                pc <= pc_br_M;
+
+            -- regular increment
+            else
+            pc <= pc_n;
+            end if;
+        end if;
+
+    end process pc_update_pr;
+
+    fetch_decode_reg : process (clk) begin
+        if (rising_edge(clk)) then
+            instr_D <= instr;
+            pc_n_D  <= pc_n;
+        end if;
+    end process fetch_decode_reg;
+
+    -- DECODE
+    ---------------------------------------------------------------------------------
+    sign_imm <= (31 downto 16 => instr_D(15), 15 downto 0 => instr_D(15 downto 0));
+
+    decode_execute_reg : process (clk) begin
+        if (rising_edge(clk)) then
+            
+        end if;
+    end process decode_execute_reg;
+
+    -- EXECUTE
+    ---------------------------------------------------------------------------------
+    execute_memory_reg : process (clk) begin
+        if (rising_edge(clk)) then
+            
+        end if;
+    end process execute_memory_reg;
+
+    -- MEMORY
+    ---------------------------------------------------------------------------------
+    memory_writeback_reg : process (clk) begin
+        if (rising_edge(clk)) then
+            
+        end if;
+    end process memory_writeback_reg;
+
+    -- WRITEBACK
+    ---------------------------------------------------------------------------------
+
+    -- Submodules
+    ---------------------------------------------------------------------------------
+    u_register_file_sync : register_file_sync
+    port map (
+        clk         => clk                  ,
+        addr_rd1    => instr_D(25 downto 21)  ,
+        addr_rd2    => instr_D(20 downto 16)  ,
+        addr_wr     => reg_wr_addr          ,
+        data_wr     => result               ,
+        wr_enable   => reg_wr               ,
+
+        data_rd1    => src_a                ,
+        data_rd2    => data_wr
+    );
+
+    u_ALU : ALU
+    port map (
+        a       => src_a    ,
+        b       => src_b    ,
+        funct   => alu_ctrl ,
+
+        output  => alu_out  ,
+        zero    => zero
+    );
+
 
 end behave;
