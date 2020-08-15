@@ -1,15 +1,15 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 
-entity tb_register_file is
-end tb_register_file;
+entity tb_register_file_sync is
+end tb_register_file_sync;
 
-architecture Behavioral of tb_register_file is
+architecture Behavioral of tb_register_file_sync is
 
     -- component declaration for DUT
 
-    component register_file is
+    component register_file_sync is
     port (
         clk         : in std_logic;
         addr_rd1    : in std_logic_vector( 4 downto 0);
@@ -21,7 +21,7 @@ architecture Behavioral of tb_register_file is
         data_rd1    : out std_logic_vector(31 downto 0);
         data_rd2    : out std_logic_vector(31 downto 0)
     );
-    end component register_file;
+    end component register_file_sync;
 
     -- inputs
     signal clk         : std_logic := '0';
@@ -41,7 +41,7 @@ architecture Behavioral of tb_register_file is
     begin
 
         -- instantiat DUT
-        u_register_file : register_file
+        u_register_file_sync : register_file_sync
         port map (
             clk         => clk          ,
             addr_rd1    => addr_rd1     ,
@@ -61,7 +61,7 @@ architecture Behavioral of tb_register_file is
             wait for clk_period/2;
             clk <= '1';
             wait for clk_period/2;
-        end process;
+        end process clk_process;
 
 
         -- simulation process
@@ -83,6 +83,6 @@ architecture Behavioral of tb_register_file is
             addr_rd1 <= "00011"; addr_rd2 <= "00000"; wait until rising_edge(clk);
 
             wait;
-        end process;
+        end process stim_proc;
 
 end Behavioral;
