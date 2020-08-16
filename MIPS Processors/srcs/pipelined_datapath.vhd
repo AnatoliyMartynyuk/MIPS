@@ -19,7 +19,7 @@ port (
     --jump        : in std_logic; //TODO: to be added later
 
     pc          : out std_logic_vector(31 downto 0);
-    alu_out     : out std_logic_vector(31 downto 0);
+    data_addr   : out std_logic_vector(31 downto 0);
     data_wr     : out std_logic_vector(31 downto 0);
 );
 end pipleined_datapath;
@@ -69,13 +69,31 @@ architecture behave of pipleined_datapath is
 
     signal instr_D      : std_logic_vector(31 downto 0);
 
-    signal r_addr       : std_logic_vector( 4 downto 0); -- r type reg wr addr
-    signal r_addr_E     : std_logic_vector( 4 downto 0);
-    signal i_addr       : std_logic_vector( 4 downto 0); -- i type reg wr addr
-    signal i_addr_E     : std_logic_vector( 4 downto 0);
+    signal r_addr           : std_logic_vector( 4 downto 0); -- r type reg wr addr
+    signal r_addr_E         : std_logic_vector( 4 downto 0);
+    signal i_addr           : std_logic_vector( 4 downto 0); -- i type reg wr addr
+    signal i_addr_E         : std_logic_vector( 4 downto 0);
+    signal reg_wr_addr      : std_logic_vector( 4 downto 0); -- mux result of last two
+    signal reg_wr_addr_M    : std_logic_vector( 4 downto 0);
+    signal reg_wr_addr_W    : std_logic_vector( 4 downto 0);
 
-    signal sign_imm     : std_logic_vector(31 downto 0);
+    signal reg_rd_1     : std_logic_vector(31 downto 0);
+    signal reg_rd_1_E   : std_logic_vector(31 downto 0);
+    signal reg_rd_2     : std_logic_vector(31 downto 0);
+    signal reg_rd_2_E   : std_logic_vector(31 downto 0);
+    signal reg_rd_2_M   : std_logic_vector(31 downto 0);
+
+    signal sign_imm     : std_logic_vector(31 downto 0); -- sign extended immediate of instruction
     signal sign_imm_E   : std_logic_vector(31 downto 0);
+
+    signal src_a        : std_logic_vector(31 downto 0);
+    signal src_b        : std_logic_vector(31 downto 0);
+    signal alu_out      : std_logic_vector(31 downto 0);
+    signal alu_out_M    : std_logic_vector(31 downto 0);
+    signal alu_out_W    : std_logic_vector(31 downto 0);
+
+    signal mem_data_W   : std_logic_vector(31 downto 0);
+    signal wb_result    : std_logic_vector(31 downto 0);
 
     -- ************************************************************************
     -- control signals/wires
@@ -116,6 +134,7 @@ begin
     pc_update_pr : process (clk) begin
         if (reset = '1') then
             pc <= (others => '0');
+            
         
         elsif(rising_edge(clk)) then
             -- branch
@@ -140,9 +159,20 @@ begin
     -- DECODE
     ---------------------------------------------------------------------------------
     sign_imm <= (31 downto 16 => instr_D(15), 15 downto 0 => instr_D(15 downto 0));
+    i_addr   <= instr_D(20 downto 16);
+    r_addr   <= instr_D(15 downto 11);
 
     decode_execute_reg : process (clk) begin
         if (rising_edge(clk)) then
+            -- datapath
+            reg_rd_1_E <= reg_rd_1;
+            reg_rd_2_E <= reg_rd_2;
+
+            i_addr_E <= i_addr;
+            r_addr_E <= r_addr;
+
+            sign_imm_E <= sign_imm;
+            pc_n_E     <= pc_n_D;
 
             -- control
             alu_ctrl_E       <= alu_ctrl;
@@ -156,8 +186,18 @@ begin
 
     -- EXECUTE
     ---------------------------------------------------------------------------------
+    reg_wr_addr <= r_addr when (reg_dst_E = '1') else i_addr;
+    src_a <= reg_rd_1_E;
+    src_b <= sign_imm_E when (alu_src_E = '1') else reg_rd_2_E;
+    pc_br <= (sign_imm_E(29 downto 2), "00") + pc_n_E;
+
     execute_memory_reg : process (clk) begin
         if (rising_edge(clk)) then
+            -- datapath
+            alu_out_M       <= alu_out;
+            reg_rd_2_M      <= reg_rd_2_E;
+            reg_wr_addr_M   <= reg_wr_addr;
+            pc_br_M         <= pc_br;
             
             -- control
             reg_wr_M         <= reg_wr_E;
@@ -168,10 +208,16 @@ begin
 
     -- MEMORY
     ---------------------------------------------------------------------------------
-    pc_src <= branch_M and zero_M;
+    pc_src  <= branch_M and zero_M;
+    data_wr <= reg_rd_2_M;
 
     memory_writeback_reg : process (clk) begin
         if (rising_edge(clk)) then
+            -- datapath
+            alu_out_W       <= alu_out_M;
+            mem_data_W      <= mem_data;
+            reg_wr_addr_W   <= reg_wr_addr_M;
+
             -- control
             reg_wr_W         <= reg_wr_M;
             mem_to_reg_W     <= mem_to_reg_M;
@@ -180,29 +226,30 @@ begin
 
     -- WRITEBACK
     ---------------------------------------------------------------------------------
+    wb_result <= mem_data_W when (mem_to_reg_W = '1') else alu_out_W;
 
     -- Submodules
     ---------------------------------------------------------------------------------
     u_register_file_sync : register_file_sync
     port map (
-        clk         => clk                  ,
-        addr_rd1    => instr_D(25 downto 21)  ,
-        addr_rd2    => instr_D(20 downto 16)  ,
-        addr_wr     => reg_wr_addr          ,
-        data_wr     => result               ,
-        wr_enable   => reg_wr               ,
+        clk         => clk                      ,
+        addr_rd1    => instr_D(25 downto 21)    ,
+        addr_rd2    => instr_D(20 downto 16)    ,
+        addr_wr     => reg_wr_addr_W            ,
+        data_wr     => wb_result                ,
+        wr_enable   => reg_wr_W                 ,
 
-        data_rd1    => src_a                ,
-        data_rd2    => data_wr
+        data_rd1    => reg_rd_1                 ,
+        data_rd2    => reg_rd_2
     );
 
     u_ALU : ALU
     port map (
-        a       => src_a    ,
-        b       => src_b    ,
-        funct   => alu_ctrl ,
+        a       => src_a        ,
+        b       => src_b        ,
+        funct   => alu_ctrl_E   ,
 
-        output  => alu_out  ,
+        output  => alu_out      ,
         zero    => zero
     );
 
