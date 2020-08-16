@@ -11,17 +11,16 @@ port (
     mem_data    : in std_logic_vector(31 downto 0);
 
     alu_ctrl    : in std_logic_vector( 2 downto 0);
-    pc_src      : in std_logic;
+    branch      : in std_logic;
     mem_to_reg  : in std_logic;
     alu_src     : in std_logic;
     reg_dst     : in std_logic;
     reg_wr      : in std_logic;
-    jump        : in std_logic;
+    --jump        : in std_logic; //TODO: to be added later
 
     pc          : out std_logic_vector(31 downto 0);
     alu_out     : out std_logic_vector(31 downto 0);
     data_wr     : out std_logic_vector(31 downto 0);
-    zero        : out std_logic
 );
 end pipleined_datapath;
 
@@ -78,6 +77,27 @@ architecture behave of pipleined_datapath is
     signal sign_imm     : std_logic_vector(31 downto 0);
     signal sign_imm_E   : std_logic_vector(31 downto 0);
 
+    -- ************************************************************************
+    -- control signals/wires
+
+    signal alu_ctrl_E       : std_logic_vector( 2 downto 0);
+    signal mem_to_reg_E     : std_logic;
+    signal alu_src_E        : std_logic;
+    signal reg_dst_E        : std_logic;
+    signal reg_wr_E         : std_logic;
+    signal branch_E         : std_logic;
+
+    signal mem_to_reg_M     : std_logic;
+    signal reg_wr_M         : std_logic;
+    signal branch_M         : std_logic;
+
+    signal mem_to_reg_W     : std_logic;
+    signal reg_wr_W         : std_logic;
+
+    signal zero             : std_logic;
+    signal zero_M           : std_logic;
+    signal pc_src           : std_logic;
+
 begin
     ---------------------------------------------------------------------------------
     -- The pipelined processor is split into 5 stages: fetch, decode, execute and
@@ -123,7 +143,14 @@ begin
 
     decode_execute_reg : process (clk) begin
         if (rising_edge(clk)) then
-            
+
+            -- control
+            alu_ctrl_E       <= alu_ctrl;
+            mem_to_reg_E     <= mem_to_reg;
+            alu_src_E        <= alu_src;
+            reg_dst_E        <= reg_dst;
+            reg_wr_E         <= reg_wr;
+            branch_E         <= branch;
         end if;
     end process decode_execute_reg;
 
@@ -132,14 +159,22 @@ begin
     execute_memory_reg : process (clk) begin
         if (rising_edge(clk)) then
             
+            -- control
+            reg_wr_M         <= reg_wr_E;
+            mem_to_reg_M     <= mem_to_reg_E;
+            branch_M         <= branch_E;
         end if;
     end process execute_memory_reg;
 
     -- MEMORY
     ---------------------------------------------------------------------------------
+    pc_src <= branch_M and zero_M;
+
     memory_writeback_reg : process (clk) begin
         if (rising_edge(clk)) then
-            
+            -- control
+            reg_wr_W         <= reg_wr_M;
+            mem_to_reg_W     <= mem_to_reg_M;
         end if;
     end process memory_writeback_reg;
 
